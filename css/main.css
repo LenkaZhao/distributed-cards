@@ -5,11 +5,17 @@ font-family: 'Denk One', sans-serif;
 html {
   box-sizing: border-box;
   line-height: 1.5;
-  font-family: Georgia, sans-serif;
+  font-family: Georgia, serif;
+  background-color: #f5f2f0;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -17,7 +23,52 @@ img {
 }
 
 h1 {
-  display: grid;
-  grid-template-columns: 1fr;
   font-family: "Denk One", sans-serif;
+  color: #623b0c;
+  margin: 1rem;
+  flex-grow: 1;
+}
+
+main > ol {
+  list-style-type: none;
+  padding: .5rem 1rem;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+ol h2 {
+  font-family: "Denk One", sans-serif;
+  color: #623b0c;
+  margin: 0 0 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  flex-grow: 1;
+  margin: 1.46rem 0;
+}
+
+main > ol li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: #ede3db;
+  border: 2px solid #623b0c;
+  border-radius: 8px;
+
+  padding: 1rem 1.05rem;
+  margin: 0;
+}
+
+main a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #623b0c;
+  margin: 1.5rem;
+  padding: .5em .75em .6em;
+  border-radius: 8px;
 }
